@@ -26,9 +26,8 @@ Projeto desenvolvido para fins de estudo em Python.
 
 ### Lógica de Geração
 * **random.choice(caracteres)**: Escolhe um dos caracteres dentro da string.
-* **Repetição**: Ocorre de acordo com o valor na variável `tamanho`.
-* **O caractere `_`**: Definido como um elemento ignorado no `for`, onde o importante são apenas as repetições.
-* **Retorno**: A função retorna a senha final gerada.
+* **for _ in range(tamanho)**: A repetição ocorre de acordo com o valor na variável `tamanho`.
+* **Caractere `_`**: Definido como um elemento ignorado no `for`, onde o importante para esse caso são apenas as repetições.
 
 ---
 
