@@ -24,3 +24,15 @@ def gerar_senha(tamanho=12, usar_maiusculo=True, usar_minusculo=True, usar_digit
     
     return senha # Retorna a senha gerada
 
+print("######## Gerador de Senhas ########")
+
+tamanho = int(input("Digite o tamanho desejado da senha: "))
+# .lower(): Transforma o texto em minúsculo
+# == "s": É o que determina o valor aceito como True no input
+usar_maiusculo = input("Deseja usar letras maiúsculas na senha: (s/n) ").lower() == "s"
+usar_minusculo = input("Deseja usar letras minúsculas na senha: (s/n) ").lower() == "s"
+usar_digitos = input("Deseja usar números na senha: (s/n) ").lower() == "s"
+usar_simbolos = input("Deseja usar símbolos na senha: (s/n) ").lower() == "s"
+
+minha_senha = gerar_senha(tamanho, usar_maiusculo, usar_minusculo, usar_digitos, usar_simbolos)
+print(f"Senha gerada: ", minha_senha)
